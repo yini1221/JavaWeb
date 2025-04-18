@@ -19,6 +19,9 @@ public class CoffeeOrderMain {
 		
 		System.out.println(priceTable);
 		System.out.println(priceTable.get("latte").get("M"));
+		
+		CoffeeOrder coffeeOrder = new CoffeeOrder("latte", "M", "true");
+		System.out.println(coffeeOrder.getInfo());
 	}
 
 }
