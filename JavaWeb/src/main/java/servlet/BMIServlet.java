@@ -48,7 +48,6 @@ public class BMIServlet extends HttpServlet {
 	// bmi 判讀
 	private String getBMIResult(double bmiValue) {
 		return bmiValue <= 18 ? "過輕" : (bmiValue > 23) ? "過重" : "正常";
-		
 	}
 	
 	
