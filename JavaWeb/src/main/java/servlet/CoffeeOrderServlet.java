@@ -31,7 +31,7 @@ public class CoffeeOrderServlet extends HttpServlet {
 		CoffeeOrder coffeeOrder = new CoffeeOrder(type, size, sugar);
 		//resp.getWriter().print(coffeeOrder.getInfo());
 		// 建立分派器
-		RequestDispatcher rd = req.getRequestDispatcher("coffee_order.jsp");
+		RequestDispatcher rd = req.getRequestDispatcher("/WEB-INF/coffee_order.jsp");
 		req.setAttribute("coffeeOrder", coffeeOrder);
 		rd.forward(req, resp);
 	}
