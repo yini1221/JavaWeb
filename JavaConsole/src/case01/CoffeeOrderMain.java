@@ -18,7 +18,7 @@ public class CoffeeOrderMain {
 				"cappuccino", Map.of("S", 55, "M", 80, "L", 100));
 		
 		System.out.println(priceTable);
-		
+		System.out.println(priceTable.get("latte").get("M"));
 	}
 
 }
