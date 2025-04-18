@@ -15,8 +15,8 @@ public class CoffeeOrder {
 			"americano", Map.of("S", 40, "M", 45, "L", 60),
 			"cappuccino", Map.of("S", 55, "M", 80, "L", 100));
 	
-	private static final Map<String, String> sizeMap = Map.of("S", "小", "M", "中", "L", "大");
-	private static final Map<Boolean, String> sugarMap = Map.of(true, "有糖", false, "無糖");
+	private static final Map<String, String> sizeTable = Map.of("S", "小", "M", "中", "L", "大");
+	private static final Map<Boolean, String> sugarTable = Map.of(true, "有糖", false, "無糖");
 	
 	public CoffeeOrder(String type, String size, String sugar) {
 		this.type = type;
@@ -26,8 +26,8 @@ public class CoffeeOrder {
 	}
 	
 	public String getInfo() {
-		String sizeText = sizeMap.get(size);
-		String sugarText = sugarMap.get(sugar);	
+		String sizeText = sizeTable.get(size);
+		String sugarText = sugarTable.get(sugar);	
 		return String.format("您點了一杯 %s杯 %s 咖啡（%s）價格：%d 元", sizeText, type, sugarText, price);
 	}
 	
