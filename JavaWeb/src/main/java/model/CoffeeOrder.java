@@ -22,7 +22,7 @@ public class CoffeeOrder {
 		this.type = type;
 		this.size = size;
 		this.sugar = Boolean.parseBoolean(sugar);
-		this.price = priceTable.get(type).get(size);
+		this.price = priceTable.get(type.toLowerCase()).get(size);
 	}
 	
 	public String getInfo() {
