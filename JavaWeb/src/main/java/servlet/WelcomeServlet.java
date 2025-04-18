@@ -21,9 +21,25 @@ public class WelcomeServlet extends HttpServlet {
 		// 例如: http://localhost:8080/JavaWeb/welcome?name=Jack&age=17
 		String name = req.getParameter("name");
 		String age = req.getParameter("age");
-		String message = Integer.parseInt(age) >= 18 ? "成年" : "未成年";
-		resp.getWriter().print(name + " 歡迎光臨 (" + age + " 歲 " + message +")");
 		
+		// 檢查 age 是否是數字
+		if(isNumber(age)) {
+			String message = Integer.parseInt(age) >= 18 ? "成年" : "未成年";
+			resp.getWriter().print(name + " 歡迎光臨 (" + age + " 歲 " + message +")");
+		} else {
+			resp.getWriter().print(name + " 歡迎光臨");
+		}
+		
+	}
+	
+	// 判斷是否是數字
+	private boolean isNumber(String data) {
+		try {
+			Integer.parseInt(data);
+			return true;
+		} catch (Exception e) {
+			return false;
+		}
 	}
 	
 	
