@@ -35,8 +35,8 @@ public class BMIServlet extends HttpServlet {
 		String result = getBMIResult(bmiValue);
 		
 		// 5.印出資訊
-		resp.getWriter().print("BMI 值 = " + bmiValue + " (" + result + ")");
-		
+		//resp.getWriter().print("BMI 值 = " + bmiValue + " (" + result + ")");
+		resp.getWriter().print(String.format("BMI 值 = %.2f (%s)", bmiValue, result));
 	}
 	
 	// 計算 bmi 值
