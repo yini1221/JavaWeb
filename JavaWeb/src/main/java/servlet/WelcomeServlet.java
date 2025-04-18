@@ -23,7 +23,7 @@ public class WelcomeServlet extends HttpServlet {
 		String age = req.getParameter("age");
 		
 		// 檢查 age 是否是數字
-		if(isNumber(age)) {
+		if(isNumber2(age)) {
 			String message = Integer.parseInt(age) >= 18 ? "成年" : "未成年";
 			resp.getWriter().print(name + " 歡迎光臨 (" + age + " 歲 " + message +")");
 		} else {
@@ -40,6 +40,12 @@ public class WelcomeServlet extends HttpServlet {
 		} catch (Exception e) {
 			return false;
 		}
+	}
+	
+	// 判斷是否是數字
+	private boolean isNumber2(String data) {
+		if(data == null) return false;
+		return data.matches("\\d+");
 	}
 	
 	
