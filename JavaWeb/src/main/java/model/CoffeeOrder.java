@@ -26,7 +26,7 @@ public class CoffeeOrder {
 	}
 	
 	public String getInfo() {
-		String sizeText = sizeTable.get(size);
+		String sizeText = sizeTable.get(size.toUpperCase());
 		String sugarText = sugarTable.get(sugar);	
 		return String.format("您點了一杯 %s杯 %s 咖啡（%s）價格：%d 元", sizeText, type, sugarText, price);
 	}
