@@ -11,10 +11,10 @@
 		<h2>Servlet 應用</h2>
 		<ol>
 			<li>
-				<a href="http://localhost:8080/JavaWeb/hello">HelloServlet</a>
+				<a href="http://localhost:8080/JavaWeb/hello">HelloServlet</a> (使用 Model 0 [只用 Servlet 或 JSP])
 			</li>
 			<li>
-				<a href="/JavaWeb/lottery">LotteryServlet</a>
+				<a href="/JavaWeb/lottery">LotteryServlet</a> (使用 Model 1 [Servlet + JSP])
 			</li>
 		</ol>
 		
