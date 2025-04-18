@@ -24,7 +24,7 @@ public class BMIServlet extends HttpServlet {
 		
 		// 3.驗證參數
 		if(!(Util.isDouble(height)&&(Util.isDouble(weight)))) {
-			System.out.println("身高體重輸入錯誤");
+			resp.getWriter().print("身高體重輸入錯誤");
 			return;
 		}
 		
