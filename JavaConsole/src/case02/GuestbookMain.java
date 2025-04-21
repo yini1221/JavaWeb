@@ -9,7 +9,13 @@ public class GuestbookMain {
 	
 	public static void main(String[] args) {
 		// 留言
-		Guestbook g1 = new Guestbook("")
+		Guestbook g1 = new Guestbook("Hello 大家好");
+		guestbooks.add(g1); // 存入留言
+		
+		Guestbook g2 = new Guestbook("好像快要下雨了...");
+		guestbooks.add(g2); // 存入留言
+		
+		System.out.println(guestbooks);
 
 	}
 
