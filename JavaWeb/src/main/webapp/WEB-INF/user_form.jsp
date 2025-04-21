@@ -6,19 +6,10 @@
 		<meta charset="UTF-8">
 		<title>使用者資料表</title>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css">
-		<style>
-			.form_container {
-				max-width: 500px;
-				margin: 50px auto;
-				padding: 20px;
-			}
-			h2 {
-				text-align: center;
-			}
-		</style>
+		
 	</head>
-	<body>
-		<div class="form-container">
+	<body style="padding: 20px">
+		<div>
 			<h2>使用者資料表單</h2>
 			<form class="pure-form pure-form-stacked" method="POST" action"/JavaWeb/user">
 				<fieldset>
