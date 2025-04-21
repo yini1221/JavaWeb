@@ -22,7 +22,19 @@ public class UserServlet extends HttpServlet {
 
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		resp.getWriter().print("doPost() ...");
+		// 接收表單資料
+		// 請求編碼
+		req.setCharacterEncoding("UTF-8");
+		// 接收參數
+		String userName = req.getParameter("userName");
+		String gender = req.getParameter("gender");
+		String age = req.getParameter("age");
+		String height = req.getParameter("height");
+		String weight = req.getParameter("weight");
+		// 將參數資料注入到 Model 中(User.java)
+		
+		
+		
 	}
 	
 	
