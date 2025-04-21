@@ -70,7 +70,8 @@ public class Coffee {
 		return rules.stream()
 					.filter(rule -> rule.matches(milk, coffee)) // 找出符合條件的規則
 					.findFirst()                                // 取得第一筆匹配的
-					.map(CoffeeRule::getResult)                 // 傳換成字串
+					//.map(CoffeeRule::getResult)                 // 傳換成字串
+					.map(rule -> rule.getResult())                 // 傳換成字串
 					.orElse("無法辨識的咖啡類型");
 	}
 	
