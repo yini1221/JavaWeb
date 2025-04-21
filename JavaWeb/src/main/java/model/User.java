@@ -1,12 +1,12 @@
 package model;
 
 public class User {
-	private String userName;
-	private String gender;
-	private Integer age;
-	private Double height;
-	private Double weight;
-	private Double bmiValue;
+	private String userName; // from 表單欄位
+	private String gender;   // from 表單欄位
+	private Integer age;     // from 表單欄位
+	private Double height;   // from 表單欄位
+	private Double weight;   // from 表單欄位
+	private Double bmiValue; // 自建欄位
 	
 	// 建構子封裝
 	public User(String username, String gender, String age, String height, String weight) {
