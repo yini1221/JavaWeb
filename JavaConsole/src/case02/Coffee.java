@@ -46,7 +46,16 @@ public class Coffee {
 	// 類別資料初始化區段
 	static {
 		// 初始化規則
-		rules.add(new CoffeeRule("濃郁的拿鐵", "牛奶的比例遠高於咖啡，味道偏向牛奶。", (milk, coffee) -> milk >= 3 * coffee));
+		rules.add(new CoffeeRule("濃郁的拿鐵", "牛奶的比例遠高於咖啡，味道偏向牛奶。", 
+				(milk, coffee) -> milk >= 3 * coffee));
+		rules.add(new CoffeeRule("平衡的拿鐵咖啡", "牛奶與咖啡的比例較為平衡，風味溫和。", 
+				(milk, coffee) -> milk >= 1.5 * coffee));
+		rules.add(new CoffeeRule("標準卡布奇諾", "牛奶與咖啡的比例恰到好處，典型的卡布奇諾", 
+				(milk, coffee) -> milk.equals(coffee))); // milk == coffee
+		rules.add(new CoffeeRule("濃縮咖啡", "咖啡的比例遠高於牛奶，口感濃烈，偏向純咖啡。", 
+				(milk, coffee) -> coffee >= 3 * milk));
+		rules.add(new CoffeeRule("普通咖啡", "牛奶與咖啡的比例較為普通，適合日常飲用。", 
+				(milk, coffee) -> true));
 		
 	}
 	
