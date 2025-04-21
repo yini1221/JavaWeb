@@ -11,7 +11,7 @@
 	<body style="padding: 20px">
 		<div>
 			<h2>咖啡資料表單</h2>
-			<form class="pure-form" method="POST" action="/JavaWeb/user">
+			<form class="pure-form" method="POST" action="/JavaWeb/coffee">
 				<fieldset>
 					<legend>Coffee Form</legend>
 					<label>Milk (ml):</label>
