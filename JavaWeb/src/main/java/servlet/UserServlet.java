@@ -8,6 +8,7 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import model.User;
 
 @WebServlet("/user")
 public class UserServlet extends HttpServlet {
@@ -32,6 +33,9 @@ public class UserServlet extends HttpServlet {
 		String height = req.getParameter("height");
 		String weight = req.getParameter("weight");
 		// 將參數資料注入到 Model 中(User.java)
+		User user = new User(userName, gender, age, height, weight);
+		
+		resp.getWriter().print(user);
 		
 		
 		
