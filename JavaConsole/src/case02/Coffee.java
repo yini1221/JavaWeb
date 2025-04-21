@@ -42,4 +42,12 @@ public class Coffee {
 	
 	// 可以儲存所有咖啡規則的清單
 	private static final List<CoffeeRule> rules = new ArrayList<>();
+	
+	// 類別資料初始化區段
+	static {
+		// 初始化規則
+		rules.add(new CoffeeRule("濃郁的拿鐵", "牛奶的比例遠高於咖啡，味道偏向牛奶。", (milk, coffee) -> milk >= 3 * coffee));
+		
+	}
+	
 }
