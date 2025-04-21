@@ -18,7 +18,7 @@
 				身高 (cm): ${ user.height }<p />
 				體重 (kg): ${ user.weight }<p />
 				BMI值: ${ user.bmiValue }<p />
-				診斷: <p />
+				診斷: ${ user.result }<p />
 				<a href="/JavaWeb/user" class="pure-button pure-button-primary">返回</a>
 			</fieldset>
 		</div>
