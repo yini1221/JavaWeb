@@ -35,8 +35,4 @@ public class GuestbookServlet extends HttpServlet {
 		req.setAttribute("guestbooks", guestbooks); // 歷史留言
 		rd.forward(req, resp);
 	}
-	
-	
-	
-	
 }
