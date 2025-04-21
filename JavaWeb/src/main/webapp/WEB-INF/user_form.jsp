@@ -30,7 +30,7 @@
 					<label>體重 (kg):</label>
 					<input name="weight" type="number" min="0.1" max="1000" step="0.1" required />
 					<p />
-					<button type="submit" class="pure-form pure-form-primary">送出</button>
+					<button type="submit" class="pure-button pure-button-primary">送出</button>
 					
 				</fieldset>
 			
