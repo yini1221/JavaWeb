@@ -15,7 +15,7 @@
 				<fieldset>
 					<legend>Guestbook Form</legend>
 					<label>留言:</label>
-					<input name="message" type="text" required />
+					<textarea name="message" type="text" required></textarea>
 					<p />
 					<button type="submit" class="pure-button pure-button-primary">送出</button>
 					
