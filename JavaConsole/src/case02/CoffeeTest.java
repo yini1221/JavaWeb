@@ -3,7 +3,8 @@ package case02;
 public class CoffeeTest {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		Coffee coffee = new Coffee(50.0, 100.0);
+		System.out.println(coffee.getCoffeeType());
 
 	}
 

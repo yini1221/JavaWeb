@@ -65,6 +65,10 @@ public class Coffee {
 		this.coffee = coffee;
 	}
 	
+	public Coffee(String milk, String coffee) {
+		this(Double.parseDouble(milk), Double.parseDouble(coffee));
+	}
+	
 	// 判斷咖啡類型
 	public String getCoffeeType() {
 		return rules.stream()
