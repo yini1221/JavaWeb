@@ -59,4 +59,30 @@ public class Coffee {
 		
 	}
 	
+	// Coffee 建構子
+	public Coffee(Double milk, Double coffee) {
+		this.milk = milk;
+		this.coffee = coffee;
+	}
+	
+	// 判斷咖啡類型
+	public String getCoffeeType() {
+		return rules.stream()
+					.filter(rule -> rule.matches(milk, coffee)) // 找出符合條件的規則
+					.findFirst()                                // 取得第一筆匹配的
+					.map(CoffeeRule::getResult)                 // 傳換成字串
+					.orElse("無法辨識的咖啡類型");
+	}
+	
+	// Getter
+	public Double getMilk() {
+		return milk;
+	}
+	
+	public Double getCoffee() {
+		return coffee;
+	}
+	
+	
+	
 }
