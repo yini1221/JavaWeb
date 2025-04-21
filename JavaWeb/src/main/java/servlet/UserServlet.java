@@ -22,7 +22,7 @@ public class UserServlet extends HttpServlet {
 
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		
+		resp.getWriter().print("doPost() ...");
 	}
 	
 	
