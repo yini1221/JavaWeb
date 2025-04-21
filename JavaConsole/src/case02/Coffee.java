@@ -83,6 +83,4 @@ public class Coffee {
 		return coffee;
 	}
 	
-	
-	
 }
