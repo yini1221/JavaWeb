@@ -5,16 +5,16 @@ import java.util.Date;
 // 訪客留言版
 public class Guestbook {
 	
-	private String userName;
+	private String message;
 	private Date date;
 	
-	public Guestbook(String userName) {
-		this.userName = userName;
+	public Guestbook(String message) {
+		this.message = message;
 		this.date = new Date();
 	}
 
-	public String getUserName() {
-		return userName;
+	public String getMessage() {
+		return message;
 	}
 
 	public Date getDate() {
@@ -23,7 +23,7 @@ public class Guestbook {
 
 	@Override
 	public String toString() {
-		return "Guestbook [userName=" + userName + ", date=" + date + "]";
+		return "Guestbook [message=" + message + ", date=" + date + "]";
 	}
 	
 }
