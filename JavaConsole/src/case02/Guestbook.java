@@ -26,6 +26,4 @@ public class Guestbook {
 		return "Guestbook [userName=" + userName + ", date=" + date + "]";
 	}
 	
-	
-	
 }
