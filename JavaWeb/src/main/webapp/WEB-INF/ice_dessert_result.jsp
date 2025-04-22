@@ -16,6 +16,7 @@
 			<h2>🍧冰果店的點餐系統-訂單結果</h2>
 			<fieldset>
 				<legend>訂單列表</legend>
+				<c:set var="totalPriceSum" value="0" />
 				<table class="pure-table pure-table-bordered">
 					<thead>
 						<tr>
@@ -31,10 +32,22 @@
 								<td>${ i.index + 1 }</td>
 								<td>${ iceOrder.mainDish.name }</td>
 								<td>${ iceOrder.topping.toppings }</td>
-								<td>${ iceOrder.totalPrice }</td>
+								<td>
+									<fmt:formatNumber value="${ iceOrder.totalPrice }" type="currency" maxFractionDigits="0" />
+								</td>
 							</tr>
+							<!-- 累加總價 -->
+							<c:set var="totalPriceSum" value="${ totalPriceSum + iceOrder.totalPrice }" />
 						</c:forEach>
 					</tbody>
+					<tfoot>
+						<tr style="background-color: #DDDDDD">
+							<td colspan="3" style="text-align: right;">總金額</td>
+							<td>
+								<fmt:formatNumber value="${ totalPriceSum }" type="currency" maxFractionDigits="0" />
+							</td>
+						</tr>
+					</tfoot>
 				</table>
 				
 				<a href="/JavaWeb/ice" class="pure-button pure-button-primary">返回</a>
