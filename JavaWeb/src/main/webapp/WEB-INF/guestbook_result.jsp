@@ -24,6 +24,7 @@
 					</c:forEach>
 				</ol>
 				<p />
+				目前留言筆數: ${fn:length(guestbooks)}
 				<table class="pure-table pure-table-bordered">
 					<thead>
 						<tr>
