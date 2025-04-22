@@ -1,5 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="jakarta.tags.core" %>
+<%@ taglib prefix="fmt" uri="jakarta.tags.fmt" %>
+<%@ taglib prefix="fn" uri="jakarta.tags.functions" %>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -14,6 +18,11 @@
 				<legend>Guestbook Result</legend>
 				本次留言: ${ message }<p />
 				歷史留言: ${ guestbooks }<p />
+				<ol>
+					<c:forEach var="gb" items="${ guestbooks }">
+						<li>${ gb.message } ${ gb.date }</li>
+					</c:forEach>
+				</ol>
 				<a href="/JavaWeb/guestbook" class="pure-button pure-button-primary">返回</a>
 			</fieldset>
 		</div>
