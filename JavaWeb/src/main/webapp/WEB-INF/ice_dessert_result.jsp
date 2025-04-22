@@ -24,6 +24,7 @@
 							<th>主餐</th>
 							<th>配料</th>
 							<th>價格</th>
+							<th>刪除</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -35,6 +36,7 @@
 								<td>
 									<fmt:formatNumber value="${ iceOrder.totalPrice }" type="currency" maxFractionDigits="0" />
 								</td>
+								<td title="按我一下刪除" style="cursor: pointer;">❌</td>
 							</tr>
 							<!-- 累加總價 -->
 							<c:set var="totalPriceSum" value="${ totalPriceSum + iceOrder.totalPrice }" />
