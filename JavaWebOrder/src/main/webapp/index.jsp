@@ -10,6 +10,7 @@
 		<meta charset="UTF-8">
 		<title>訂單首頁</title>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css">
+		<link rel="stylesheet" href="/JavaWebOrder/css/buttons.css">
 	</head>
 	<body style="padding: 20px">
 		
@@ -23,12 +24,12 @@
 					<option value="番茄麵">番茄麵</option>
 				</select>
 				<p />
-				<button type="submit" class="pure-button">送出訂單</button>
+				<button type="submit" class="button-success pure-button">送出訂單</button>
 			</fieldset>
 		</form>
 		
 		<form class="pure-form" method="get" action="/JavaWebOrder/order">
-			<button type="submit">查看歷史資料</button>
+			<button type="submit" class="button-warning pure-button">查看歷史資料</button>
 		</form>
 		
 		
