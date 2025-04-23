@@ -19,7 +19,7 @@
 				<table class="pure-table pure-table-bordered">
 					<thead>
 						<tr>
-							<th>Index</th><th>Item</th><th>Delete</th>
+							<th>Index</th><th>Item</th><th>Delete</th><th>修改</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -28,6 +28,7 @@
 								<td>${ row.index }</td>
 								<td>${ dto.message }</td>
 								<td><a href="/JavaWebOrder/order/delete?index=${ row.index }" class="button-error pure-button">X</a></td>
+								<td><a href="/JavaWebOrder/order/update?index=${ row.index }" class="button-button-success pure-button">✏️</a></td>
 							</tr>
 						</c:forEach>
 					</tbody>
