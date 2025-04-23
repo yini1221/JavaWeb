@@ -16,7 +16,7 @@ public class OrderUpdateServlet extends HttpServlet {
 	
 	private OrderService orderService = new OrderService();
 	
-	// 根據 index 呈現修改表單
+	// 根據 index 呈現修改表單(update.jsp)
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		String index = req.getParameter("index");
