@@ -32,8 +32,8 @@
 						</c:forEach>
 					</tbody>
 					<tfoot>
-						<tr>
-							<td colspan="2" style="text-align: right;background-color: #DDDDDD">總金額</td>
+						<tr style="background-color: #DDDDDD">
+							<td colspan="2" style="text-align: right;">總金額</td>
 							<td>${ totalPrice }</td>
 						</tr>
 					</tfoot>
