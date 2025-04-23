@@ -36,7 +36,7 @@
 						<tr style="background-color: #DDDDDD">
 							<td> </td>
 							<td style="text-align: right;">總金額: ${ totalPrice } 元</td>
-							<td> </td>
+							<td colspan="2"> </td>
 						</tr>
 					</tfoot>
 				</table>
