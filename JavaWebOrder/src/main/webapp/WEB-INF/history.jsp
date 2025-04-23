@@ -18,7 +18,7 @@
 				<table class="pure-table pure-table-bordered">
 					<thead>
 						<tr>
-							<th>Index</th><th>Item</th>
+							<th>Index</th><th>Item</th><th>Delete</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -26,6 +26,7 @@
 							<tr>
 								<td>${ row.index }</td>
 								<td>${ dto.message }</td>
+								<td>X</td>
 							</tr>
 						</c:forEach>
 					</tbody>
