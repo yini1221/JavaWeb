@@ -27,7 +27,8 @@ public class OrderServlet extends HttpServlet {
 		List<OrderDTO> orderDTOs = orderService.getOrderHistory();
 		// 計算總金額
 		int totalPrice = orderDTOs.stream()
-								  .mapToInt(dto -> productService.getPrice(dto.get))
+								  .mapToInt(dto -> productService.getPrice(dto.getMessage()))
+								  .sum();
 		// 重導到指定 jsp 並帶上歷史紀錄資料
 		RequestDispatcher rd = req.getRequestDispatcher("/WEB-INF/history.jsp");
 		req.setAttribute("orderDTOs", orderDTOs);
