@@ -10,6 +10,7 @@
 		<meta charset="UTF-8">
 		<title>訂單歷史資料</title>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css">
+		<link rel="stylesheet" href="/JavaWebOrder/css/buttons.css">
 	</head>
 	<body style="padding: 20px">
 		<div class="pure-form">
@@ -26,7 +27,7 @@
 							<tr>
 								<td>${ row.index }</td>
 								<td>${ dto.message }</td>
-								<td>X</td>
+								<td><a href="" class="button-error pure-button">X</a></td>
 							</tr>
 						</c:forEach>
 					</tbody>
