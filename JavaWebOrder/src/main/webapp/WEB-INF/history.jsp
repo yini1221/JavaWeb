@@ -31,6 +31,12 @@
 							</tr>
 						</c:forEach>
 					</tbody>
+					<tfoot>
+						<tr>
+							<td colspan="2" style="text-align: right;background-color: #DDDDDD">總金額</td>
+							<td>${ totalPrice }</td>
+						</tr>
+					</tfoot>
 				</table>
 				<p />
 				<a href="/JavaWebOrder/index.jsp" class="pure-button pure-button-primary">回首頁</a>

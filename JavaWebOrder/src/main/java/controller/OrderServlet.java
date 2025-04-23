@@ -22,9 +22,12 @@ public class OrderServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		// 得到歷史紀錄
 		List<OrderDTO> orderDTOs = orderService.getOrderHistory();
+		// 計算總金額
+		int totalPrice = orderDTOs.size() * 100; 
 		// 重導到指定 jsp 並帶上歷史紀錄資料
 		RequestDispatcher rd = req.getRequestDispatcher("/WEB-INF/history.jsp");
 		req.setAttribute("orderDTOs", orderDTOs);
+		req.setAttribute("totalPrice", totalPrice);
 		rd.forward(req, resp);
 	}
 	
