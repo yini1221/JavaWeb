@@ -25,9 +25,14 @@ public class ProductService {
 		return new ProductDTO(product.getItem(), product.getPrice());
 	}
 	
-	// 根據 item 取得價格
-	public Integer getPrice(String item) {
-		return getProductDTO(item).getPrice();
+	// 根據 message 取得價格
+	public Integer getPrice(String message) {
+		return productDAO.findAll()
+						 .stream()
+						 .filter(p -> message.contains(p.getItem())) // 模糊比對
+						 .findFirst()
+						 .get()
+						 .getPrice();
 	}
 	
 }
