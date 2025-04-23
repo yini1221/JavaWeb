@@ -1,5 +1,9 @@
 package model.entity;
 
-public class Order {
 
+public class Order {
+	private String item;
+	private Integer price;
+	
+	
 }
