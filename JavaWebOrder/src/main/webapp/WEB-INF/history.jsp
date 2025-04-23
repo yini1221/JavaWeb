@@ -33,8 +33,9 @@
 					</tbody>
 					<tfoot>
 						<tr style="background-color: #DDDDDD">
-							<td colspan="2" style="text-align: right;">總金額</td>
-							<td>${ totalPrice }</td>
+							<td> </td>
+							<td style="text-align: right;">總金額: ${ totalPrice } 元</td>
+							<td> </td>
 						</tr>
 					</tfoot>
 				</table>
