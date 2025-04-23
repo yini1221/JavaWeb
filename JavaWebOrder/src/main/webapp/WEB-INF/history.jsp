@@ -27,7 +27,7 @@
 							<tr>
 								<td>${ row.index }</td>
 								<td>${ dto.message }</td>
-								<td><a href="/JavaWebOrder/order/delete?id=${ row.index }" class="button-error pure-button">X</a></td>
+								<td><a href="/JavaWebOrder/order/delete?index=${ row.index }" class="button-error pure-button">X</a></td>
 							</tr>
 						</c:forEach>
 					</tbody>
