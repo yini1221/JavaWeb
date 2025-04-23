@@ -26,7 +26,7 @@
 					<option value="番茄麵">番茄麵</option>
 				</select>
 				<p />
-				<button type="submit" class="button-success pure-button">送出訂單</button>
+				<button type="submit" class="button-success pure-button">修改訂單</button>
 			</fieldset>
 		</form>
 		
