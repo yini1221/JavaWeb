@@ -3,6 +3,7 @@ package controller;
 import java.io.IOException;
 import java.util.List;
 
+import dao.ProductDAO;
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -23,7 +24,7 @@ public class OrderServlet extends HttpServlet {
 		// 得到歷史紀錄
 		List<OrderDTO> orderDTOs = orderService.getOrderHistory();
 		// 計算總金額
-		int totalPrice = orderDTOs.size() * 100; 
+		int totalPrice =  
 		// 重導到指定 jsp 並帶上歷史紀錄資料
 		RequestDispatcher rd = req.getRequestDispatcher("/WEB-INF/history.jsp");
 		req.setAttribute("orderDTOs", orderDTOs);
