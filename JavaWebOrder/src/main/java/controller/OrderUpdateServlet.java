@@ -22,7 +22,7 @@ public class OrderUpdateServlet extends HttpServlet {
 		String index = req.getParameter("index");
 		// 重導到指定 jsp 並帶上 index
 		RequestDispatcher rd = req.getRequestDispatcher("/WEB-INF/update.jsp");
-		req.setAttribute(index, index);
+		req.setAttribute("index", index);
 		rd.forward(req, resp);
 	}
 
