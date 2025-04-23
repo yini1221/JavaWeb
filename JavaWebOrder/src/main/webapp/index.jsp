@@ -29,7 +29,7 @@
 		</form>
 		
 		<form class="pure-form" method="get" action="/JavaWebOrder/order">
-			<button type="submit" class="button-warning pure-button">查看歷史資料</button>
+			<button type="submit" class="button-secondary pure-button">查看歷史資料</button>
 		</form>
 		
 		
