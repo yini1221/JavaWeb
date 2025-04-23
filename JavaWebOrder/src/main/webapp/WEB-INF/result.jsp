@@ -8,10 +8,12 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Insert title here</title>
+		<title>訂單結果</title>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css">
 	</head>
-	<body>
-	
+	<body style="padding: 20px">
+		<div class="pure-form">
+			${ orderDTO.message }
+		</div>
 	</body>
 </html>s
