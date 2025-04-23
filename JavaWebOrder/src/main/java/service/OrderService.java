@@ -41,6 +41,11 @@ public class OrderService {
 	}
 	
 	// 刪除一筆訂單根據 index
+	public OrderDTO removeOrder(String index) {
+		return removeOrder(Integer.parseInt(index));
+	}
+	
+	// 刪除一筆訂單根據 index
 	public OrderDTO removeOrder(int index) {
 		orderDAO.remove(index);
 		OrderDTO orderDTO = new OrderDTO();
