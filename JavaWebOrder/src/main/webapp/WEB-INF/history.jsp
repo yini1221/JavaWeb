@@ -22,9 +22,9 @@
 						</tr>
 					</thead>
 					<tbody>
-						<c:forEach varStatus="index" var="dto" items="${ orderDTOs }">
+						<c:forEach varStatus="row" var="dto" items="${ orderDTOs }">
 							<tr>
-								<td>${ index }</td>
+								<td>${ row.index }</td>
 								<td>${ dto.message }</td>
 							</tr>
 						</c:forEach>
