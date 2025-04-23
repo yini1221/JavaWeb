@@ -1,5 +1,8 @@
 package service;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import dao.OrderDAO;
 import model.dto.OrderDTO;
 import model.entity.Order;
@@ -22,5 +25,20 @@ public class OrderService {
 		
 		return orderDTO;
 	}
+	
+	// 取得歷史資料
+	public List<OrderDTO> getOrderHistory() {
+		List<Order> orders = orderDAO.findAll(); // 取得所有資料
+		// 將 List<Order> 轉 List<OrderDTO>
+		List<OrderDTO> orderDTOs = new ArrayList<>();
+		// 一筆一筆轉
+		for(Order order : orders) {
+			OrderDTO dto = new OrderDTO();
+			dto.setMessage("您點了 " + order.getItem() + " 價格:" + order.getPrice() + "元");
+			orderDTOs.add(dto); // 逐筆加入到集合中
+		}
+		return orderDTOs;
+	}
+	
 	
 }
