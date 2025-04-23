@@ -38,7 +38,4 @@ public class OrderUpdateServlet extends HttpServlet {
 		req.setAttribute("orderDTO", orderDTO);
 		rd.forward(req, resp);
 	}
-	
-	
-	
 }
