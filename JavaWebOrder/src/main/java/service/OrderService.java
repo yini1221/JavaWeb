@@ -53,5 +53,18 @@ public class OrderService {
 		return orderDTO;
 	}
 	
+	// 修改單筆
+	public OrderDTO updateOrder(int index, String newItem) {
+		Order order = orderDAO.getOrder(index);
+		order.setItem(newItem);
+		orderDAO.update(index, order);
+		
+		OrderDTO orderDTO = new OrderDTO();
+		orderDTO.setMessage("index=" + index + ". 資料修改成功");
+		return orderDTO;
+	}
+	
+	 
+	
 	
 }
