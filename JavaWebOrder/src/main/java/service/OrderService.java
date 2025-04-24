@@ -62,6 +62,7 @@ public class OrderService {
 	public OrderDTO updateOrder(int index, String newItem) {
 		Order order = orderDAO.getOrder(index);
 		order.setItem(newItem);
+		order.setPrice(productDAO.getProduct(newItem).getPrice());
 		orderDAO.update(index, order);
 		// 回報結果
 		OrderDTO orderDTO = new OrderDTO();
